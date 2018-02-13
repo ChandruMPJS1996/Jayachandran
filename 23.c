@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<conio.h>
+(void) 
+{
+int a,b,lcm,gcd;
+clrscr();
+scanf("%d %d",&a,&b);
+for(int i=2;i<=a&&i<=b;i++)
+{
+	if(a%i==0 && b%i==0)
+	{
+		gcd=i;
+	}
+}
+lcm=(a*b)/gcd;
+printf("%d",lcm);
+return 0;
+getch();
+}
